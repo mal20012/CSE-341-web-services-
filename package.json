@@ -10,6 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
-  }
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mal20012/CSE-341-web-services-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mal20012/CSE-341-web-services-/issues"
+  },
+  "homepage": "https://github.com/mal20012/CSE-341-web-services-#readme"
 }
