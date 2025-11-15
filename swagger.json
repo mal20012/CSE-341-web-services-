@@ -1,0 +1,37 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Contacts API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/contacts": {
+      "get": {
+        "summary": "Get all contacts",
+        "responses": { "200": { "description": "List of contacts" } }
+      },
+      "post": {
+        "summary": "Create a new contact",
+        "requestBody": { "required": true },
+        "responses": { "201": { "description": "Created contact id" } }
+      }
+    },
+    "/api/contacts/{id}": {
+      "get": {
+        "summary": "Get contact by ID",
+        "parameters": [{ "name": "id", "in": "path", "required": true }],
+        "responses": { "200": { "description": "Contact found" } }
+      },
+      "put": {
+        "summary": "Update contact by ID",
+        "parameters": [{ "name": "id", "in": "path", "required": true }],
+        "responses": { "200": { "description": "Contact updated" } }
+      },
+      "delete": {
+        "summary": "Delete contact by ID",
+        "parameters": [{ "name": "id", "in": "path", "required": true }],
+        "responses": { "200": { "description": "Contact deleted" } }
+      }
+    }
+  }
+}
